@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%" style="background-color: #0b0f19; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">
+  <defs>
+    <linearGradient id="termGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131c2e" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="10" y="10" width="1180" height="340" rx="12" fill="url(#termGrad)" stroke="#1e293b" stroke-width="1.5" />
+  
+  <!-- Terminal Header Bar -->
+  <path d="M 10 22 Q 10 10 22 10 L 1178 10 Q 1190 10 1190 22 L 1190 48 L 10 48 Z" fill="#1e293b"/>
+  <circle cx="32" cy="29" r="6" fill="#ef4444"/>
+  <circle cx="52" cy="29" r="6" fill="#f59e0b"/>
+  <circle cx="72" cy="29" r="6" fill="#10b981"/>
+  <text x="95" y="33" fill="#94a3b8" font-size="12" font-weight="700">VELQRON EVIDENCE ENGINE — LIVE DIAGNOSTIC OUTPUT SPECIMEN</text>
+  <rect x="1040" y="20" width="130" height="20" rx="4" fill="#065f46"/>
+  <text x="1052" y="34" fill="#34d399" font-size="10" font-weight="800">[AUDIT SAFE]</text>
+
+  <!-- Terminal Content Area -->
+  <g transform="translate(30, 75)">
+    <!-- Timestamp & Cycle ID -->
+    <text x="0" y="0" fill="#64748b" font-size="13" font-weight="600">[2026-08-02T09:30:14Z] CYCLE_ID: #8492-MTR-104 | MOTOR: 7.5kW 4-POLE INDUCTION</text>
+    
+    <!-- Sensor Ingestion Line -->
+    <text x="0" y="28" fill="#38bdf8" font-size="13" font-weight="700">⚡ TELEMETRY:</text>
+    <text x="120" y="28" fill="#e2e8f0" font-size="13">I_rms: 18.2A (+14% over baseline) | Temp: 78.4°C | FFT Peak: 120.4Hz (BPFO Harmonic)</text>
+
+    <!-- Divider Line -->
+    <line x1="0" y1="42" x2="1140" y2="42" stroke="#334155" stroke-dasharray="4 4" stroke-width="1"/>
+
+    <!-- Engine 1 & 2 Output -->
+    <text x="0" y="66" fill="#fbbf24" font-size="13" font-weight="700">⚙️ ENGINE FACTS:</text>
+    <text x="130" y="66" fill="#fef08a" font-size="13">LPTN_Thermal_Twin: Stator Winding Temp Rise +34°C | Insulation Arrhenius Accel: 1.82x</text>
+    <text x="130" y="88" fill="#fef08a" font-size="13">TinyML ONNX: Bearing Outer Race Defect (Probability: 0.887)</text>
+
+    <!-- Engine 3 Verdict -->
+    <text x="0" y="118" fill="#34d399" font-size="13" font-weight="700">🛡️ DECISION:</text>
+    <text x="130" y="118" fill="#a7f3d0" font-size="13" font-weight="700">VERDICT: [ALERT_MAINTENANCE_REQUIRED] — Bayesian P(Outer_Race_Spall) = 88.7%</text>
+
+    <!-- Ollama Plain Language Explanation Box -->
+    <g transform="translate(0, 138)">
+      <rect x="0" y="0" width="1140" height="95" rx="8" fill="#0f172a" stroke="#3b82f6" stroke-width="1.2"/>
+      <text x="16" y="24" fill="#60a5fa" font-size="12" font-weight="800">💬 LOCAL OLLAMA EXPLAINER (NATURAL LANGUAGE MECHANICAL TRUTH):</text>
+      
+      <text x="16" y="50" fill="#f1f5f9" font-size="13" font-weight="500">"Current rise of 14% combined with 120.4Hz vibration harmonics indicates early-stage outer race spalling on the</text>
+      <text x="16" y="70" fill="#f1f5f9" font-size="13" font-weight="500">Drive-End bearing. LPTN thermal twin shows winding temperature at 78.4°C, accelerating insulation thermal aging by 1.82x.</text>
+      <text x="16" y="90" fill="#38bdf8" font-size="13" font-weight="700">RECOMMENDED ACTION: Lubricate DE bearing within 48 hrs; schedule mechanical replacement at next planned outage."</text>
+    </g>
+  </g>
+</svg>

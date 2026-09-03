@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="100%" height="100%" style="background-color: #0b0f19; font-family: system-ui, -apple-system, sans-serif;">
+  <rect width="1200" height="160" fill="#0b0f19" />
+  
+  <g transform="translate(40, 20)">
+    <!-- Header Title -->
+    <rect x="0" y="0" width="1120" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="23" fill="#38bdf8" font-size="12" font-weight="800" letter-spacing="1">[HARDWARE SPECIFICATION &amp; DEPLOYMENT PATHS]</text>
+    
+    <!-- Path 1: Dev/Testing -->
+    <g transform="translate(0, 50)">
+      <rect x="0" y="0" width="545" height="70" rx="8" fill="#111827" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="16" y="24" fill="#60a5fa" font-size="14" font-weight="800">R&amp;D / Dev Track</text>
+      <text x="16" y="48" fill="#94a3b8" font-size="12" font-weight="500">Standard ESP32 (CT + ADXL345 + DS18B20) + Local Laptop</text>
+      <rect x="420" y="15" width="110" height="24" rx="4" fill="#1e3a8a"/>
+      <text x="432" y="31" fill="#93c5fd" font-size="11" font-weight="700">LOW COST R&amp;D</text>
+    </g>
+
+    <!-- Path 2: Commercial Industrial -->
+    <g transform="translate(575, 50)">
+      <rect x="0" y="0" width="545" height="70" rx="8" fill="#111827" stroke="#10b981" stroke-width="1.5"/>
+      <text x="16" y="24" fill="#34d399" font-size="14" font-weight="800">Commercial Pilot / Cabinet Track</text>
+      <text x="16" y="48" fill="#94a3b8" font-size="12" font-weight="500">Waveshare ESP32-S3-RS485-CAN (DIN Rail) + Industrial Mini-PC</text>
+      <rect x="410" y="15" width="120" height="24" rx="4" fill="#064e3b"/>
+      <text x="420" y="31" fill="#6ee7b7" font-size="11" font-weight="700">INDUSTRIAL GRADE</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+{
+    "SIM_MOTOR_01": {
+        "manufacturer": "Siemens",
+        "model": "1LA7070-4AB10",
+        "rated_power_kw": 0.25,
+        "rated_current_a": 0.68,
+        "insulation_class": "F",
+        "max_temp_c": 155,
+        "service_factor": 1.1,
+        "description": "Standard 3-phase induction motor for industrial fans."
+    },
+    "SIM_MOTOR_02": {
+        "manufacturer": "ABB",
+        "model": "M3BP 160 MLC 4",
+        "rated_power_kw": 11.0,
+        "rated_current_a": 21.0,
+        "insulation_class": "H",
+        "max_temp_c": 180,
+        "service_factor": 1.15,
+        "description": "High-efficiency process motor for heavy pumps."
+    }
+}
